@@ -1,0 +1,6 @@
+C:\Users\J\Documents\Visual Studio 2013\Projects\BrailleReader\BrailleReader\bin\Debug\20131211.exe.config
+C:\Users\J\Documents\Visual Studio 2013\Projects\BrailleReader\BrailleReader\obj\Debug\20131211.exe
+C:\Users\J\Documents\Visual Studio 2013\Projects\BrailleReader\BrailleReader\obj\Debug\20131211.pdb
+C:\Users\J\Documents\Visual Studio 2013\Projects\BrailleReader\BrailleReader\bin\Debug\20131211.exe
+C:\Users\J\Documents\Visual Studio 2013\Projects\BrailleReader\BrailleReader\bin\Debug\20131211.pdb
+C:\Users\J\Documents\Visual Studio 2013\Projects\BrailleReader\BrailleReader\obj\Debug\BrailleReader.csprojResolveAssemblyReference.cache
