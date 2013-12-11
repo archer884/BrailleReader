@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
 
-namespace _20131211
+namespace BrailleReader
 {
     public class ConfigurationSectionHandler : IConfigurationSectionHandler
     {

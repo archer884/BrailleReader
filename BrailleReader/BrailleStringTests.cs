@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _20131211
+namespace BrailleReader
 {
     [TestClass]
     public class BrailleStringTests

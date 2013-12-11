@@ -4,24 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _20131211
+namespace BrailleReader
 {
     class BrailleCharacter
     {
-        private byte _value;
-        public char Value
-        {
-            get
-            {
-                return _value.AsCharacter();
-            }
-        }
+        public char Value { get; set; }
 
         public BrailleCharacter() { }
 
         public BrailleCharacter(IEnumerable<bool> value)
         {
-            _value = value.AsByte();
+            Value = value.AsByte().AsCharacter();
         }
     }
 }

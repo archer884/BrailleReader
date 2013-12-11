@@ -5,27 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using BitArray = System.Collections.BitArray;
 
-namespace _20131211
+namespace BrailleReader
 {
-    //public static class IEnumerableExtensions
-    //{
-    //    public static IEnumerable<T> Pad<T>(this IEnumerable<T> collection, int length, T value)
-    //    {
-    //        var counter = 15;
-    //        foreach (var item in collection)
-    //        {
-    //            yield return item;
-    //            counter++;
-    //        }
-
-    //        while (counter < length)
-    //        {
-    //            yield return value;
-    //            counter++;
-    //        }
-    //    }
-    //}
-
     public static class ByteExtensions
     {
         private static IDictionary<byte, char> _charMap;
@@ -76,19 +57,17 @@ namespace _20131211
             return CharMap[value];
         }
 
-        public static byte AsByte(this BitArray bits)
-        {
-            //if (bits.Count != 8) throw new ArgumentException("wrong number of bits");
-
-            var bytes = new byte[1];
-            bits.CopyTo(bytes, 0);
-            return bytes[0];
-        }
-
         public static byte AsByte(this IEnumerable<bool> bits)
         {
             if (bits.Count() > 8) throw new ArgumentException("too many bits");
             return new BitArray(bits.ToArray()).AsByte();
+        }
+
+        public static byte AsByte(this BitArray bits)
+        {
+            var bytes = new byte[1];
+            bits.CopyTo(bytes, 0);
+            return bytes[0];
         }
     }
 }
